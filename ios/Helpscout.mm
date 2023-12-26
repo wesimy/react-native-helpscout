@@ -2,9 +2,8 @@
 
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
-#import <Beacon/HSBeacon.h>
-#import <Beacon/HSBeaconSettings.h>
-#import <Beacon/HSBeaconUser.h>
+
+#import "Beacon.h"
 
 @implementation Helpscout
 RCT_EXPORT_MODULE()
