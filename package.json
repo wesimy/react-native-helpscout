@@ -1,5 +1,5 @@
 {
-  "name": "react-native-helpscout",
+  "name": "@wesimy/react-native-helpscout",
   "version": "0.1.11",
   "description": "Bridge",
   "main": "lib/commonjs/index",
