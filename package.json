@@ -1,7 +1,7 @@
 {
   "name": "@wesimy/react-native-helpscout",
-  "version": "0.1.4",
-  "description": "React Native Bridge for helpscout beacon",
+  "version": "0.1.5",
+  "description": "Helpscout Beacon React Native Bridge",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -161,10 +161,5 @@
         }
       ]
     ]
-  },
-  "codegenConfig": {
-    "name": "RNHelpscoutSpec",
-    "type": "modules",
-    "jsSrcsDir": "src"
   }
 }

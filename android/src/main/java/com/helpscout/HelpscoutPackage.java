@@ -1,44 +1,28 @@
 package com.helpscout;
 
-import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
 
+import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
-import com.facebook.react.module.model.ReactModuleInfo;
-import com.facebook.react.module.model.ReactModuleInfoProvider;
-import com.facebook.react.TurboReactPackage;
+import com.facebook.react.uimanager.ViewManager;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-public class HelpscoutPackage extends TurboReactPackage {
-
-  @Nullable
+public class HelpscoutPackage implements ReactPackage {
+  @NonNull
   @Override
-  public NativeModule getModule(String name, ReactApplicationContext reactContext) {
-    if (name.equals(HelpscoutModule.NAME)) {
-      return new HelpscoutModule(reactContext);
-    } else {
-      return null;
-    }
+  public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
+    List<NativeModule> modules = new ArrayList<>();
+    modules.add(new HelpscoutModule(reactContext));
+    return modules;
   }
 
+  @NonNull
   @Override
-  public ReactModuleInfoProvider getReactModuleInfoProvider() {
-    return () -> {
-      final Map<String, ReactModuleInfo> moduleInfos = new HashMap<>();
-      moduleInfos.put(
-              HelpscoutModule.NAME,
-              new ReactModuleInfo(
-                      HelpscoutModule.NAME,
-                      HelpscoutModule.NAME,
-                      false, // canOverrideExistingModule
-                      false, // needsEagerInit
-                      true, // hasConstants
-                      false, // isCxxModule
-                      true // isTurboModule
-      ));
-      return moduleInfos;
-    };
+  public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
+    return Collections.emptyList();
   }
 }
