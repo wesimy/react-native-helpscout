@@ -1,6 +1,8 @@
 # react-native-helpscout
 
-Helpscout Beacon React Native Bridge
+Helpscout Beacon for React Native
+
+!!!!!!!! This is a work in progress and not yet ready !!!!!!!!!
 
 ## Installation
 
