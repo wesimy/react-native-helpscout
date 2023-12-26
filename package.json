@@ -1,6 +1,6 @@
 {
   "name": "react-native-helpscout",
-  "version": "0.1.0",
+  "version": "0.1.11",
   "description": "Bridge",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
