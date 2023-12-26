@@ -1,6 +1,7 @@
 {
   "name": "@wesimy/react-native-helpscout",
   "version": "0.1.5",
+  "private":true,
   "description": "Helpscout Beacon React Native Bridge",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
