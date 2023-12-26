@@ -1,8 +1,6 @@
 # react-native-helpscout
 
-Helpscout Beacon for React Native
-
-!!!!!!!! This is a work in progress and not yet ready !!!!!!!!!
+React Native Bridge for helpscout beacon
 
 ## Installation
 
@@ -12,12 +10,13 @@ npm install react-native-helpscout
 
 ## Usage
 
+
 ```js
 import { multiply } from 'react-native-helpscout';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = multiply(3, 7);
 ```
 
 ## Contributing
